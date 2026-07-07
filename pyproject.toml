@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-skill-search-kit"
+version = "0.1.0"
+description = "No-key citation-first search tools for coding agents"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Agent Skill Search Kit Contributors" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+agent-skill-search = "agent_skill_search_kit.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
